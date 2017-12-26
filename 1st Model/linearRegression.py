@@ -30,7 +30,8 @@ for counter in range(iterations):
     W -= t1
     b -= t2
 
+loss = 0
 for i in range(m, n):
-    loss = predict(x[i], W, b) - y[i]
-    print(loss)
+    loss += predict(x[i], W, b) - y[i]
+print(loss / (n - m))
 print("W: ", W, " b: ", b)
