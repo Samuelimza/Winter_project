@@ -1,5 +1,4 @@
 import numpy as np
-#numpy used for importing data
 
 def predict(x, W, b):
     return W * x + b
