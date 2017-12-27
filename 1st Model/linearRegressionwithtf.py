@@ -3,7 +3,7 @@ import numpy as np
 
 alpha = 0.01
 iterations = 100
-data = np.genfromtxt('doc.txt', delimiter=',')
+data = np.genfromtxt('doc1.txt', delimiter=',')
 #data represents line y = 0.7x + 0.8
 m = int(len(data) * 0.7) # Training data from 0 to m - 1
 n = len(data) # Testing data from m to n - 1
