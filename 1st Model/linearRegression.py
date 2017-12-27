@@ -49,12 +49,12 @@ class model1():
             self.W -= t1
             self.b -= t2
 
-linearModel = model1('doc.txt')
+linearModel = model1('doc1.txt')
 #data represents line y = 0.7x + 0.8
 linearModel.printModel()
 linearModel.train()
 linearModel.printModel()
-linearModel = model1('NonLinear.txt')
+linearModel = model1('doc2.txt')
 #data roughly represents y = 0.5x^2 + 0.7x - 1.8
 linearModel.printModel()
 linearModel.train()
