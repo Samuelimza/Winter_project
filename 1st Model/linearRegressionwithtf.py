@@ -15,10 +15,10 @@ b = tf.Variable([np.random.rand() * 10], dtype = tf.float32)
 myModel = W * x + b # Model y = W * x + b
 train = (tf.train.GradientDescentOptimizer(alpha)).minimize(tf.reduce_sum(tf.square(myModel - y)))
 
-xTrainData = [int(data[i][0]) for i in range(0, m)]
-yTrainData = [int(data[i][1]) for i in range(0, m)]
-xTestData = [int(data[i][0]) for i in range(m, n)]
-yTestData = [int(data[i][1]) for i in range(m, n)]
+xTrainData = [float(data[i][0]) for i in range(0, m)]
+yTrainData = [float(data[i][1]) for i in range(0, m)]
+xTestData = [float(data[i][0]) for i in range(m, n)]
+yTestData = [float(data[i][1]) for i in range(m, n)]
 
 init = tf.global_variables_initializer()
 sess = tf.Session()
